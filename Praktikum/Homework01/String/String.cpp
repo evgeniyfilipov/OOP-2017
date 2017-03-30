@@ -31,6 +31,7 @@ String& String::operator=(const String& other)
         destroy();
         copy(other);
     }
+    return *this;
 }
 
 String::String(char* str, size_t size)
